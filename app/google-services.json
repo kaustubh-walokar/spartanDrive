@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_id": "sparta-91d30",
+    "project_number": "46165466485",
+    "name": "Sparta"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46165466485:android:64c6baa88dbf768f",
+        "client_id": "android:com.kaustubh.cmpe277termproject",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.kaustubh.cmpe277termproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46165466485-hovjprs7b1n6osi8qgh0ghrb643ra7k6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kaustubh.cmpe277termproject",
+            "certificate_hash": "2B60028EB3E62AD879D4FB8242E38DD0F08F8DD0"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kaustubh.cmpe277termproject.MenuFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload A file"
+        android:id="@+id/upload_files"
+        android:layout_marginBottom="78dp"
+        android:layout_above="@+id/view_files"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Files"
+        android:id="@+id/view_files"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+//below code added by arpit for Google sign in
+apply plugin: 'com.google.gms.google-services'
+//code ended
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'SD'
+            keyPassword '12345678'
+            storeFile file('/Users/kaustubh/key.jks')
+            storePassword '12345678'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        applicationId "com.kaustubh.cmpe277termproject"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //AWS
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:support-v4:23.+'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.google.android.gms:play-services:8.3.0'
+    compile 'com.amazonaws:aws-android-sdk-core:2.+'
+    compile 'com.amazonaws:aws-android-sdk-s3:2.+'
+    compile 'com.amazonaws:aws-android-sdk-cognito:2.+'
+    compile 'com.google.android.gms:play-services-ads:8.3.0'
+    compile 'com.google.android.gms:play-services-identity:8.3.0'
+    compile 'com.google.android.gms:play-services-gcm:8.3.0'
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile 'com.parse:parse-android:1.+'
+}
+
+dependencies {
+    compile 'com.google.android.gms:play-services-ads:8.3.0'
+}
+dependencies {
+    compile 'com.google.android.gms:play-services-identity:8.3.0'
+}
+dependencies {
+    compile 'com.google.android.gms:play-services-gcm:8.3.0'
+}
+dependencies {
+    compile 'com.google.android.gms:play-services-auth:8.3.0'
+}
