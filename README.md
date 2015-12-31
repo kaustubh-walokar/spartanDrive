@@ -24,14 +24,11 @@ Utkarsh Saxena| 010104120 | [utkarsh.saxena@sjsu.edu](mailto:utkarsh.saxena@sjsu
 
 #### The platform and technology choices
 
-  
-
-Platform: Android Min SDK Kitkat 4.4.4
-
-Services: Google APIs service for Login , Google Drive / DropBox for file storage
-
-Database: Google Drive
-
+▪ IDE: Android Studio (Min. API Level:19, Max API Level: 21)
+▪ Android Version: KitKat 4.4
+▪ AWS SDK: For uploading/downloading files from AWS S3
+▪ Google APIs: For Sign-In to the app
+▪ Parse: For push notifications
   
 
 #### Project abstract 
@@ -43,7 +40,23 @@ This application is developed for Android users, which allows registered user to
 The application also sends users the notification of the storage he/she has used and space remaining. This app also sends a push notification for the user  whenever he is being shared/unshared from any files/folder.
 
   
-  
+Spartan Drive app which we have developed enables its users to upload, manage, and share files among friends. The following are the major features of the application:
+
+1. User can login using the Google Account.
+2. User upload a file in uploaded folder of its account.
+3. Spartan drive also provides the feature of folder management. Supported file types, use
+different icon for each type doc, xls, pdf, ppt
+1. User can share file with other registered user of this application.
+2. A user is able to browse files (owned or shared), browse list of folders and list of files
+within a folder.
+3. User can view each files (only the supported types), email the current file, navigate into
+any level of directories one by one.
+1. We had used AWS-S3 as storage device and has implemented our own file
+picker/browser, as opposed to using any stock file or document picker.
+2. The user is able to see how many files and folders he owns, and their total size.
+3. Application supports push notification, when a file is shared/unshared with a user, he/she will get a push notification about the same.
+The motivation behind this project is to develop an app that ease the process of file sharing among user, with the help of this app user can access its file any where any time and also can share files quickly.
+
 
 #### Project Features 
 
@@ -75,5 +88,13 @@ This app enables one to upload, manage, and share files among friends. The major
 
 8. Cloud storage service (either Dropbox or Google Drive) for storing the files 
 9. Usage report: the user should be able to see how many files and folders he owns, and their total size.   
-10. Push notification: when a file is shared with you or unshared with you, you get a push notification.  
+10. Push notification: when a file is shared with you or unshared with you, you get a push notification.
+
+#### Future Scope:
+
+This is a very useful application for academics and professionals. We restricted our project scope due to strict deadlines but we plan to extend it in the following manner –
+
+1) Integrating it with Dropbox and Google Drive and allowing user to save his files into the choice of his drive.
+2) Integrating the camera, so that user can take pictures and they will be uploaded directly to Sparta Drive.
+3) Creating a virtualized cloud storage of users unused disk space like old laptops, hard drives, pen drives and uploading the files to it. This feature has a wide scope as user’s file will reside in his own space thus making them more safe and secure. It will also give an added advantage to users to utilize its unused disk space.  
   
